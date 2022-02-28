@@ -11,7 +11,7 @@ namespace EmployeeWageProblem
         public static void calmonthlywage()
         {
            
-            int Working_Hour;
+            int Working_Hour=0;
             int Wage_per_hour = 20;
             int dailyWage;
             int totalWage=0;
@@ -25,7 +25,7 @@ namespace EmployeeWageProblem
                 {
                     case 0:
                         Console.WriteLine(" Employee is absent");
-                        Working_Hour = 0;
+                         Working_Hour = 0;
                         break;
                     case 1:
                         Console.WriteLine("Employee is present");
@@ -33,12 +33,12 @@ namespace EmployeeWageProblem
                         break;
                     case 2:
                         Console.WriteLine("Employee is working partime");
-                        Working_Hour = 4;
+                         Working_Hour = 4;
                         break;
-
+                }
                     dailyWage = Working_Hour * Wage_per_hour;
                     totalWage = totalWage + dailyWage;
-                }
+                
             }
             Console.WriteLine("Employee monthly wage is " + totalWage);
         }
